@@ -20,32 +20,32 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <header class="ZZ_Flex ZZ_Justify_Center align-items-center">
-        <div class="nav__header">
+    <header class="ZZ_Flex ZZ_Justify_Center align-items-center bg-dark">
+        <div class="nav__header align-items-center p-2">
             <a href="../index.html">
-                <span class="material-symbols-outlined lightgray">arrow_back</span>
+                <span class="material-symbols-outlined text-secondary">arrow_back</span>
             </a>
-            <h1 class="fs-2 text-center fw-bold">Adicionar receita</h1>
+            <h1 class="fs-2 text-center fw-bold text-secondary">Adicionar receita</h1>
         </div>
     </header>
     
-    <main class="ZZ_Flex ZZ_Direction_Column align-items-center">
+    <main class="ZZ_Flex ZZ_Direction_Column align-items-center text-secondary">
         <form name="dados" id="dados" method="post" action="" class="box-form">
-            <div class="box-item">
-                <label for="data" class="form-label">Data</label>
-                <input type="datetime-local" id="data" name="data" class="form-control">
+            <div class="box-item  mt-5">
+                <label for="data" class="form-label m-2 text-secondary">Data</label>
+                <input type="datetime-local" id="data" name="data" class="form-control text-secondary bg-dark mb-4 border border-1 rounded-4">
             </div>
-            <div class="box-item">
-                <label for="valor" class="form-label">Valor</label>
-                <input type="number" id="valor" name="valor" class="form-control" required placeholder="Ex: R$ 2.800,00">
+            <div class="box-item  mt-4">
+                <label for="valor" class="form-label m-2 text-secondary">Valor</label>
+                <input type="number" id="valor" name="valor" class="form-control text-secondary bg-dark mb-4 border border-1 rounded-4" required placeholder="Ex: R$ 2.800,00">
             </div>
-            <div class="box-item">
-                <label for="pagador" class="form-label">Pagador</label>
-                <input type="text" id="pagador" name="pagador" class="form-control" required minlength="5" maxlength="15" placeholder="Ex: FIAP">
+            <div class="box-item  mt-4">
+                <label for="pagador" class="form-label m-2 text-secondary">Pagador</label>
+                <input type="text" id="pagador" name="pagador" class="form-control text-secondary bg-dark mb-4 border border-1 rounded-4" required minlength="5" maxlength="15" placeholder="Ex: FIAP">
             </div>
-            <div class="box-item">
-                <label for="categoria" class="form-label">Categoria</label>
-                <input list ="categoria" name="categoria" class="form-control" placeholder="Ex: Salário">
+            <div class="box-item  mt-4">
+                <label for="categoria" class="form-label m-2 text-secondary">Categoria</label>
+                <input list ="categoria" name="categoria" class="form-control text-secondary bg-dark mb-4 border border-1 rounded-4" placeholder="Ex: Salário">
                     <datalist id="categoria">
                         <option value="Informática">
                         <option value="Moradia">
@@ -54,15 +54,15 @@
                         <option value="Veículo">
                 </datalist>
             </div>
-            <div class="box-item">
-                <label for="descricao" class="form-label">Descrição</label>
-                <input type="text" id="descricao" name="descricao" class="form-control" required placeholder="Ex: Primeiro salário tech">
+            <div class="box-item  mt-4">
+                <label for="descricao" class="form-label m-2 text-secondary">Descrição</label>
+                <input type="text" id="descricao" name="descricao" class="form-control text-secondary bg-dark border border-1 rounded-4" required placeholder="Ex: Primeiro salário tech">
             </div>
         </form>
     </main>
 
-    <footer class="footer__transacoes">
-        <div class="transacao__button__check">
+    <footer class="footer__transacoes ZZ_Flex ZZ_Justify_Right">
+        <div class="transacao__button__check bg-dark rounded-circle ZZ_Flex ZZ_Justify_Center align-items-center">
             <a href="#">
                 <span class="material-symbols-outlined extra_large_icon">check</span>
             </a>

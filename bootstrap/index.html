@@ -26,12 +26,12 @@
 
 <body>
 
-    <header class="ZZ_Flex ZZ_Justify_Center align-items-center">
-        <h1 class="fs-2 text-center fw-bold">FintechApp</h1>
+    <header class="ZZ_Flex bg-dark ZZ_Justify_Center align-items-center">
+        <h1 class="fs-2 text-center fw-bold text-secondary">FintechApp</h1>
     </header>
 
-    <main class="ZZ_Flex ZZ_Direction_Column align-items-center">
-        <div class="widget ZZ_justify_space_around rounded-3 border border-black border-1 my-5 py-5 px-2 gap-5 ZZ_Flex ZZ_Direction_Column">
+    <main class="ZZ_Flex ZZ_Direction_Column align-items-center text-secondary">
+        <div class="widget bg-dark ZZ_justify_space_around rounded-4 border border-black border-2 my-5 py-5 px-2 gap-5 ZZ_Flex ZZ_Direction_Column">
             <h2 class="fs-1 text-center fw-bold text-light">Abril</h2>
 
             <div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="align-items-start ZZ_Flex ZZ_Direction_Column">
                         <p class="lh-sm">Despesas</p>
-                        <h3 class="red fw-semibold fs-3">R$ 0,00</h3>
+                        <h3 class="text-danger fw-semibold fs-3">R$ 0,00</h3>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@
                     </div>
                     <div class="align-items-start ZZ_Flex ZZ_Direction_Column">
                         <p class="lh-sm">Receitas</p>
-                        <h3 class="green fw-semibold fs-3">R$ 0,00</h3>
+                        <h3 class="text-success fw-semibold fs-3">R$ 0,00</h3>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
     </main>
 
 
-    <footer class="footer__home">
+    <footer class="footer__home py-3 bg-dark">
 
         <div class="footer__item ZZ_Flex ZZ_Justify_Center align-items-center">
             <a href="index.html">
@@ -79,18 +79,18 @@
             </a>
         </div>
 
-        <div class="footer__item footer__item__add ZZ_Flex ZZ_Justify_Center align-items-center">
+        <div class="footer__item footer__item__add bg-primary ZZ_Flex ZZ_Justify_Center align-items-center rounded-circle">
             <input type="checkbox" id="menu">
             <label for="menu">
                 <span class="material-symbols-outlined large_icon">add</span>
             </label>
 
-            <div class="footer__menu">
-                <div class="footer__menu__item">
+            <div class="footer__menu ZZ_Direction_Column align-items-center gap-3">
+                <div class="footer__menu__item ZZ_Flex bg-primary align-items-center ZZ_Justify_Center rounded-5">
                     <a href="./pages/adddespesa.html" class="text-light">Despesa</a>
                 </div>
 
-                <div class="footer__menu__item">
+                <div class="footer__menu__item ZZ_Flex bg-primary align-items-center ZZ_Justify_Center rounded-5">
                     <a href="./pages/addreceita.html" class="text-light">Receita</a>
                 </div>
 
