@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Despesa</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+     
+     <!-- Google Icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="nav__header">
+            <a href="categorias.html">
+                <span class="material-symbols-outlined lightgray">arrow_back</span>
+            </a>
+            <h1>Adicionar categoria</h1>
+        </div>
+    </header>
+    
+    <main>
+        <form name="dados" id="dados" method="post" action="" class="box-form">
+            <div class="box-item">
+                <label for="categoria" class="form-label">Categoria</label>
+                <input list ="categoria" name="categoria" class="form-control" placeholder="Ex: Despesa">
+                    <datalist id="categoria">
+                        <option value="Receita">
+                        <option value="Despesa">
+                </datalist>
+            </div>
+            <div class="box-item">
+                <label for="descricao" class="form-label">Descrição</label>
+                <input type="text" id="descricao" name="descricao" class="form-control" required placeholder="Ex: Farmácia">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer__transacoes">
+        <div class="transacao__button__check">
+            <a href="#">
+                <span class="material-symbols-outlined extra_large_icon">check</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{
+    line-height: 4rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color_accent);
+    font-size: 0.9rem;    
+}
+
+thead tr{
+    background: var(--color_background_title);
+    color: var(--color_text);
+}
+
+th, td{
+    padding: 0 0 0 1rem;
+}
+
+td i{
+    vertical-align: middle;
+}
+
+
+.footer__transacoes{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 17%;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+}
+
+.transacao__button__add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6372F5;
+    height: 80px;
+    width: 80px;
+    border-radius: 200px;
+    transform: scale(1);
+}
+
+.transacao__button__check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color_accent);
+    height: 80px;
+    width: 80px;
+    border-radius: 200px;
+    transform: scale(1);
+}
+
+.box-form {
+    margin: 1.5rem;
+    width: 80%;
+}
+
+.box-item {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0rem;
+}
+
+.form-label {
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    color: var(--color_text);
+}
+
+.form-control {
+    color: var(--color_text);
+    width: 100%;
+    border: 0.2px solid var(--color_text);
+    background-color: var(--color_accent);
+    height: 3.25rem;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}

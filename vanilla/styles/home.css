@@ -1,0 +1,59 @@
+.widget{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: var(--color_background__widget);
+    gap: 4rem;
+    width: 85%;
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0.5px 0.5px 5px var(--color_text);
+    margin-top: 3rem;
+}
+
+.widget__fluxo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8%;
+    height: 5rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.widget__fluxo__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 45%;
+    padding: 0;
+}
+
+.widget__fluxo__valor{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: transparent;
+}
+
+.widget__fluxo__valor p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--color_text);
+}
+
+.widget__fluxo__valor h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.saldo{
+    color: var(--color_text_strong);
+    font-size: 2.25rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
