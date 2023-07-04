@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Despesa</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+     
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex justify-center items-center __background-secondary-color w-full h-20 fixed">
+        <div class="grid grid-cols-[20%_60%_20%] items-center p-2 w-full">
+            <a href="../index.html">
+                <span class="material-symbols-outlined text-gray-400">arrow_back</span>
+            </a>
+            <h1 class="text-2xl text-center font-semibold">Adicionar receita</h1>
+        </div>
+    </header>
+    
+    <main class="flex flex-col items-center h-4/5 pt-20 box-border">
+        <form name="dados" id="dados" method="post" action="" class="w-4/5">
+            <div class="box-item  mt-5">
+                <label for="data" class="text-base m-2">Data</label>
+                <input type="datetime-local" id="data" name="data" class="box-border w-full text-gray __background-secondary-color mb-4 rounded-md px-2 py-3">
+            </div>
+            <div class="box-item  mt-4">
+                <label for="valor" class="text-base m-2">Valor</label>
+                <input type="number" id="valor" name="valor" class="box-border w-full text-gray __background-secondary-color mb-4 rounded-md px-2 py-3" required placeholder="Ex: R$ 2.800,00">
+            </div>
+            <div class="box-item  mt-4">
+                <label for="pagador" class="text-base m-2">Pagador</label>
+                <input type="text" id="pagador" name="pagador" class="box-border w-full text-gray __background-secondary-color mb-4 rounded-md px-2 py-3" required minlength="5" maxlength="15" placeholder="Ex: FIAP">
+            </div>
+            <div class="box-item  mt-4">
+                <label for="categoria" class="text-base m-2">Categoria</label>
+                <input list ="categoria" name="categoria" class="box-border w-full text-gray __background-secondary-color mb-4 rounded-md px-2 py-3" placeholder="Ex: Salário">
+                    <datalist id="categoria">
+                        <option value="Informática">
+                        <option value="Moradia">
+                        <option value="Compras online">
+                        <option value="Cartão de crédito">
+                        <option value="Veículo">
+                </datalist>
+            </div>
+            <div class="box-item  mt-4">
+                <label for="descricao" class="text-base m-2">Descrição</label>
+                <input type="text" id="descricao" name="descricao" class="box-border w-full text-gray __background-secondary-color mb-4 rounded-md px-2 py-3" required placeholder="Ex: Primeiro salário tech">
+            </div>
+        </form>
+    </main>
+
+    <footer class="bottom-0 w-11/12 fixed flex justify-end h-1/6">
+        <div class="button__check w-20 h-20 __background-secondary-color rounded-full flex justify-center items-center">
+            <a href="#">
+                <span class="material-symbols-outlined scale-[2.5]">check</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

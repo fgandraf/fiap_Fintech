@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FintechApp</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="flex __background-secondary-color justify-center items-center w-full h-20 fixed">
+        <h1 class="text-3xl text-center font-bold">FintechApp</h1>
+    </header>
+
+    <main class="flex flex-col items-center h-4/5 pt-20 box-border">
+        <div class="w-11/12 box-border __background-secondary-color justify-around rounded-xl border border-black my-5 py-10 px-2 gap-12 flex flex-col">
+            <h2 class="text-3xl text-center font-bold text-white">Abril</h2>
+
+            <div>
+                <p class="text-center text-1xl">Saldo em conta</p>
+                <p class="text-4xl text-center leading-tight text-white">R$ 0,00</p>
+            </div>
+
+
+            <div class="widget__fluxo gap-4 flex justify-center w-full box-border">
+                <div class="w-2/5 gap-2 items-center flex justify-center">
+                    <div>
+                        <img src="./images/despesas.svg">
+                    </div>
+                    <div class="items-start flex flex-col">
+                        <p class="leading-none">Despesas</p>
+                        <h3 class="text-red-500 font-semibold text-2xl">R$ 0,00</h3>
+                    </div>
+                </div>
+
+                <div class="w-2/5 gap-2 items-center flex justify-center">
+                    <div>
+                        <img src="./images/receitas.svg">
+                    </div>
+                    <div class="items-start flex flex-col">
+                        <p class="leading-none">Receitas</p>
+                        <h3 class="text-green-600 font-semibold text-2xl">R$ 0,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="z-10 bottom-0 fixed grid grid-cols-5 py-4 __background-secondary-color w-full">
+
+        <div class="footer__item flex justify-center items-center w-20">
+            <a href="index.html">
+                <span class="material-symbols-outlined scale-[1.4]">home</span>
+            </a>
+        </div>
+
+        <div class="footer__item flex justify-center items-center w-20">
+            <a href="./pages/transacoes.html">
+                <span class="material-symbols-outlined scale-[1.4]">receipt_long</span>
+            </a>
+        </div>
+
+        <div class="footer__item -mt-16 h-20 bg-blue-500 flex justify-center items-center rounded-full w-20">
+            <input type="checkbox" id="menu" class="hidden">
+            <label for="menu">
+                <span class="material-symbols-outlined scale-[1.4]">add</span>
+            </label>
+
+            <div id="footer_menu" class="-mt-72 absolute hidden flex-col items-center gap-3 w-full">
+                <div class="w-2/5 h-16 flex bg-blue-500 items-center justify-center rounded-full">
+                    <a href="./pages/adddespesa.html" class="text-gray-100">Despesa</a>
+                </div>
+
+                <div class="w-2/5 h-16 flex bg-blue-500 items-center justify-center rounded-full">
+                    <a href="./pages/addreceita.html" class="text-gray-100">Receita</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__item flex justify-center items-center w-20">
+            <a href="./pages/categorias.html">
+                <span class="material-symbols-outlined scale-[1.4]">category</span>
+            </a>
+        </div>
+
+        <div class="footer__item flex justify-center items-center w-20">
+            <a href="./pages/configuracoes.html">
+                <span class="material-symbols-outlined scale-[1.4]">more_horiz</span>
+            </a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
