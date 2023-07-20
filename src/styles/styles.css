@@ -25,3 +25,11 @@ body{
 #menu:checked ~ #footer_menu{
     display: flex;
 }
+
+.mockup{
+    background-image: url(../images/iphone.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

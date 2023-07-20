@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,86 +8,94 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/styles.css">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-     
+
     <!-- Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!-- Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="flex justify-center items-center __background-secondary-color w-full h-20 fixed">
-        <div class="grid grid-cols-[20%_60%_20%] items-center p-2 w-full">
-            <a href="../index.html">
-                <span class="material-symbols-outlined text-gray-400">arrow_back</span>
-            </a>
-            <h1 class="text-2xl text-center font-semibold">Categorias</h1>
-        </div>
-    </header>
-    
-    <main class="flex flex-col items-center h-4/5 pt-20 box-border">
-        <table class="w-full">
-            <thead>
-                <tr class=" leading-[4rem]">
-                    <th colspan="2" class="px-1 __background-tertiary-color">Receitas</th>
-                </tr>
-            </thead>
 
-            <tbody class="divide-y divide-gray-700">
-                <tr class="text-green-600 leading-[4rem]">
-                    <td class="px-2">Salário</td>
-                    <td><i class="material-symbols-outlined text-gray-400">arrow_right_alt</i></td>
-                </tr>
+<body class="min-h-screen p-8 text-zinc900 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+    <section class="mockup w-[350px] mx-auto h-[710px] flex justify-center items-center px-[22px]">
 
-                <tr class="text-green-600 leading-[4rem]">
-                    <td class="px-2">Freelance</td>
-                    <td><i class="material-symbols-outlined text-gray-400">arrow_right_alt</i></td>
-                </tr>
-            </tbody>
- 
-            <thead>
-                <tr class=" leading-[4rem]">
-                    <th colspan="2" class="px-1 __background-tertiary-color">Despesas</th>
-                </tr>
-            </thead>
+        <section class="bg-black w-[302px] h-[670px] ml-[2px] mt-[43px] rounded-[35px]">
+            <header class="flex justify-center items-center __background-secondary-color w-full h-[50px]">
+                <div class="grid grid-cols-[20%_60%_20%] items-center p-2 w-full">
+                    <a href="../index.html">
+                        <span class="material-symbols-outlined text-gray-400">arrow_back</span>
+                    </a>
+                    <h1 class="text-lg text-center font-semibold">Categorias</h1>
+                </div>
+            </header>
 
-            <tbody class="divide-y divide-gray-700">
+            <main class="flex flex-col items-center h-4/5 box-border text-sm">
+                <table class="w-full">
+                    <thead>
+                        <tr class="leading-[3rem]">
+                            <th colspan="2" class="px-1 __background-tertiary-color">Receitas</th>
+                        </tr>
+                    </thead>
 
-                <tr class="text-red-500 leading-[4rem]">
-                    <td class="px-2">Moradia</td>
-                    <td><i class="material-symbols-outlined text-gray-400">arrow_right_alt</i></td>
-                </tr>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr class="text-green-600 leading-[3rem]">
+                            <td class="px-1">Salário</td>
+                            <td><i class="material-symbols-outlined text-gray-400 text-sm">arrow_right_alt</i></td>
+                        </tr>
 
-                <tr class="text-red-500 leading-[4rem]">
-                    <td class="px-2">Compras online</td>
-                    <td><i class="material-symbols-outlined text-gray-400">arrow_right_alt</i></td>
-                </tr>
+                        <tr class="text-green-600 leading-[3rem]">
+                            <td class="px-1">Freelance</td>
+                            <td><i class="material-symbols-outlined text-gray-400 text-sm">arrow_right_alt</i></td>
+                        </tr>
+                    </tbody>
 
-                <tr class="text-red-500 leading-[4rem]">
-                    <td class="px-2">Cartão de Crédito</td>
-                    <td><i class="material-symbols-outlined text-gray-400">arrow_right_alt</i></td>
-                </tr>
+                    <thead>
+                        <tr class="leading-[3rem]">
+                            <th colspan="2" class="px-1 __background-tertiary-color">Despesas</th>
+                        </tr>
+                    </thead>
 
-                <tr class="text-red-500 leading-[4rem]">
-                    <td class="px-2">Veículo</td>
-                    <td><i class="material-symbols-outlined text-gray-400">arrow_right_alt</i></td>
-                </tr>
+                    <tbody class="divide-y divide-gray-700">
 
-            </tbody>
-        </table>
-    </main>
+                        <tr class="text-red-500 leading-[3rem]">
+                            <td class="px-1">Moradia</td>
+                            <td><i class="material-symbols-outlined text-gray-400 text-sm">arrow_right_alt</i></td>
+                        </tr>
 
-    <footer class="bottom-0 w-11/12 fixed flex justify-end h-1/6">
-        <div class="w-20 h-20 __background-secondary-color rounded-full flex justify-center items-center">
-            <a href="addcategoria.html">
-                <span class="material-symbols-outlined scale-[2.5]">add</span>
-            </a>
-        </div>
-    </footer>
+                        <tr class="text-red-500 leading-[3rem]">
+                            <td class="px-1">Compras online</td>
+                            <td><i class="material-symbols-outlined text-gray-400 text-sm">arrow_right_alt</i></td>
+                        </tr>
+
+                        <tr class="text-red-500 leading-[3rem]">
+                            <td class="px-1">Cartão de Crédito</td>
+                            <td><i class="material-symbols-outlined text-gray-400 text-sm">arrow_right_alt</i></td>
+                        </tr>
+
+                        <tr class="text-red-500 leading-[3rem]">
+                            <td class="px-1">Veículo</td>
+                            <td><i class="material-symbols-outlined text-gray-400 text-sm">arrow_right_alt</i></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </main>
+
+            <footer class="w-11/12 flex justify-end h-1/6">
+                <div class="w-16 h-16 __background-secondary-color rounded-full flex justify-center items-center">
+                    <a href="addcategoria.html">
+                        <span class="material-symbols-outlined scale-[2.5]">add</span>
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </section>
 </body>
+
 </html>
